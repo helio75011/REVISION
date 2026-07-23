@@ -1,0 +1,5 @@
+# Outils locaux : inutiles en ligne, exclus du déploiement.
+server.js
+lancer.cmd
+tools/
+README.md
