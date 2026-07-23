@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Révision CDA — Merise, UML & CI/CD</title>
+    <meta
+      name="description"
+      content="Jeu de révision pour la soutenance CDA : Merise (MCD/MLD/MPD), UML et CI/CD. Progression par leçons, sans système de vies."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ================= En-tête ================= -->
+    <header class="topbar" id="topbar">
+      <div class="topbar-inner">
+        <div class="stat" title="Série de jours consécutifs">
+          <span class="stat-ico">🔥</span><span id="stat-streak">0</span>
+        </div>
+        <div class="stat" title="Points d’expérience">
+          <span class="stat-ico">⭐</span><span id="stat-xp">0</span>
+        </div>
+        <div class="stat" title="Couronnes obtenues">
+          <span class="stat-ico">👑</span><span id="stat-crowns">0</span>
+        </div>
+        <button class="icon-btn" id="btn-install" hidden title="Installer l’application">⬇️</button>
+        <button class="icon-btn" id="btn-sound" title="Son">🔊</button>
+      </div>
+    </header>
+
+    <!-- ================= Écrans ================= -->
+    <main id="app" class="app"></main>
+
+    <!-- ================= Navigation ================= -->
+    <nav class="tabbar" id="tabbar">
+      <button class="tab is-active" data-view="path"><span>🗺️</span>Parcours</button>
+      <button class="tab" data-view="review"><span>🔁</span>Renforcer</button>
+      <button class="tab" data-view="stats"><span>📊</span>Stats</button>
+    </nav>
+
+    <!-- ================= Leçon (plein écran) ================= -->
+    <section class="lesson" id="lesson" hidden aria-live="polite">
+      <div class="lesson-top">
+        <button class="quit" id="btn-quit" aria-label="Quitter la leçon">✕</button>
+        <div class="bar"><div class="bar-fill" id="lesson-progress"></div></div>
+        <div class="combo" id="lesson-combo" title="Bonnes réponses d’affilée"></div>
+      </div>
+
+      <div class="lesson-body" id="lesson-body"></div>
+
+      <footer class="lesson-foot" id="lesson-foot">
+        <div class="feedback" id="feedback"></div>
+        <button class="btn btn-primary" id="btn-check" disabled>Vérifier</button>
+      </footer>
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
