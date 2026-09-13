@@ -97,4 +97,4 @@ récupèrent la nouvelle version.
 ## Point de contenu à connaître
 
 Les fiches tranchent la contradiction signalée dans `CLAUDE.md` sur le nombre de tests :
-**15 tests — 8 d’intégration et 7 unitaires**. C’est ce chiffre qui est enseigné par le jeu.
+**15 tests — 8 d’intégration et 7 unitaires**. C’est ce chiffre qui est enseigné par le jeu
